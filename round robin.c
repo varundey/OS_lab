@@ -10,8 +10,6 @@ int main(){
 	for (i=0;i<5;i++){
 		scanf("%d",&servt[i]);
 		service_time[i]=servt[i];
-	}
-	for (i=0;i<5;i++){
 		sum=sum+servt[i];
 	}
 	printf("Enter time quantum\n");
