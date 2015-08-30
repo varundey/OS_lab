@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-	int mem,i,req,alloc_no,n;
+	int mem,i,req,alloc_no,n,count=0;
 	char s[50];
 	printf("Enter file name\n");
 	scanf("%s",&s);
@@ -31,6 +31,10 @@ int main(){
 			}
 			else{
 				printf("%d\t",i);
+				count++;
+				if (count==req){
+					break;
+				}
 			}
 		}
 	}
